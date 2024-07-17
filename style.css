@@ -19,13 +19,17 @@
 
 #card {
   background: var(--color-white);
-  border: 1px solid black;
-  box-shadow: 10px 10px black;
+  border: 2px solid black;
+  box-shadow: 8px 8px black;
   width: 384px;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   border-radius: 1rem; /* equals 16px which is the default root font size */
+}
+
+#card:hover {
+  box-shadow: 16px 16px black;
 }
 
 #image {
@@ -35,6 +39,7 @@
 }
 
 #image img {
+  margin-top: 5px;
   border-radius: 10px;
   width: 100%;
 }
@@ -42,7 +47,6 @@
 #tag-and-date {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 #learning {
@@ -57,11 +61,20 @@
   text-align: center;
 }
 
+#date {
+  font-weight: 500;
+}
+
 #title-text h3 {
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 900;
+}
+
+#title-text h3:hover {
+  color: var(--color-yellow);
+  cursor: pointer;
 }
 
 #title-text p {
@@ -70,7 +83,22 @@
   margin-bottom: 15px;
 }
 
+#icon-image {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+#icon-image img {
+  width: 10%;
+}
+
+#icon-image p {
+  font-weight: 800;
+}
+
 /* footer */
 .attribution {
-  margin-top: 20px;
+  margin-top: 40px;
 }
