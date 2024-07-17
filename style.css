@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+#page {
+  height: 100vh;
+  background: var(--color-yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  background: var(--color-white);
+  border: 1px solid black;
+  box-shadow: 10px 10px black;
+  width: 384px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem; /* equals 16px which is the default root font size */
+}
+
+#image {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+#image img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+#tag-and-date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#learning {
+  background: var(--color-yellow);
+  width: 20%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-sizing: content-box;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.attribution {
+  margin-top: 20px;
+}
